@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+//Переменные
+$first-color: #35A3FC
+$second-color: #2D8BD6
+$third-color: #329AF0
+$forth-color: #184870
+$fifth-color: #2571B0
+$sixth-color: #35A3FC
+
+$text-color: white
+$header-and-footer-color: #A7A7A7
+$sub-bottom-color: #C4C4C4
+
+$btn-color: #C4C4C4
+
+$card1-color: #C4C4C4
+$card2-color: #575757
+$card3-color: #C4C4C4
+$card-text-color: black
+
+$font-size: 1.5em
+$font-title-size: 2.25em
+
+//Адаптив по ширине
+  
+@media(max-width: 1460px)
+  .container
+    max-width: 950px
+
+  .row
+    flex-flow: column nowrap
+    justify-content: center
+
+  .slider
+    &_wrapper
+      max-width: 950px
+    &__slide
+      img
+        width: 950px
+
+  .page
+    &_left
+      width: 100%
+      padding-bottom: 2rem
+      img
+        width: 600px
+        height: 500px
+      p
+        text-align: left
+        padding: 1rem 0
+    &_right
+      width: 100%
+      img
+        img
+        width: 600px
+        height: 500px
+      p
+        text-align: center
+        padding: 0
+      &-img
+        display: none
+    &__card
+      &_light
+        margin-bottom: 2rem
+        &:last-child
+          margin-bottom: 0
+      &_dark
+        margin-bottom: 2rem
+      &_light, &_dark
+        p
+          padding: 0 0 1rem
+          text-align: center
+        img
+          width: 600px
+          height: 500px
+
+@media(max-width: 1024px)
+  .container
+    max-width: 700px
+
+  .slider
+    &_wrapper
+      max-width: 700px
+      height: 400px
+    &__slide
+      img
+        width: 700px
+        height: 400px
+
+  p
+    font-size: 1.25em
+    line-height: 1.5em
+
+  h1, h2, h3
+    color: $font-title-size
+    text-align: center
+
+  h1 
+    font-size: 3.75em
+
+  h2
+    padding: 30px 0
+    font-size: 1.75em
+    color: white
+
+  h3
+    font-size: 1.75em
+    padding: 15px
+
+  a
+    color: $text-color
+    font-size: 1.25em
+    text-decoration: none
+    &:hover
+      color: black
+
+@media(max-width: 767px)
+  
+
+  .menu-burger
+    position: fixed
+    top: 1rem
+    left: 1.25rem
+    width: 2.5rem
+    height: 2.2rem
+    display: block
+    box-shadow: #ccc
+    span, &:after, &:before
+      height: 3px
+      width: 100%
+      position: absolute
+      background: #515758
+      margin: 0 auto
+    span
+      top: 1rem
+    &:after, &:before
+      content: ''
+    &:after
+      bottom: 5px
+    &:before
+      top: 5px
+    &.open-menu
+      span
+        /*если элемент имеет оба класса одновременно*/
+        opacity: 0
+        transition: 0.5s
+      &:before
+        transform: rotate(38deg)
+        top: 16px
+        transition: 0.4s
+      &:after
+        transform: rotate(-38deg)
+        bottom: 16px
+        transition: 0.4s
+
+
+// @media(max-width: 480px)
+
+
+// @media(max-width: 320px)
+
+  //Адаптив по высоте

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+//Переменные
+$first-color: #35A3FC
+$second-color: #2D8BD6
+$third-color: #329AF0
+$forth-color: #184870
+$fifth-color: #2571B0
+$sixth-color: #35A3FC
+
+$text-color: white
+$header-and-footer-color: #A7A7A7
+$sub-bottom-color: #C4C4C4
+
+$btn-color: #C4C4C4
+
+$card1-color: #C4C4C4
+$card2-color: #575757
+$card3-color: #C4C4C4
+$card-text-color: black
+
+$font-size: 1.5em
+$font-title-size: 2.25em
+
+// @function rem($pixels, $context: $font-size)
+//   @return round(#{$pixels / $context}rem)
+
+html, body
+  font-family: 'Montserrat', sans-serif
+  font-size: 16px
+  scroll-behavior: smooth
+  margin: 0;
+  padding: 0;
+
+section
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  align-items: center
+
+p, h1, h2, h3, a
+  margin: 0
+  padding: 0
+
+p
+  font-size: $font-size
+  line-height: 1.5em
+
+h1, h2, h3
+  color: $font-title-size
+  text-align: center
+
+h1 
+  font-size: 4em
+
+h2
+  padding: 30px 0
+  font-size: 2.25em
+  color: white
+
+h3
+  font-size: 2em
+  padding: 15px
+
+a
+  color: $text-color
+  font-size: $font-size
+  text-decoration: none
+  &:hover
+    color: black
+
+img
+  height: 100%
+  width: auto
+  margin: 0
+
+ul
+  margin: 0
+  padding: 0
+  li
+    list-style-type: none
+
+header, footer
+  background-color: $header-and-footer-color
+
+main
+  margin-top: 100px
+
+.container
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  max-width: 1420px
+  padding: 0 1rem
+  margin: 0 auto
+
+.row
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  align-items: center
+  &_for-header
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+  &_for-footer
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+
+.column
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  align-items: center
+
+.menu
+  height: 100px
+  &_fixed
+    position: fixed
+    z-index: 2
+    width: 100%
+    top: 0
+    background-color: $header-and-footer-color
+  &__logo
+    &_start
+      width: 160px
+      height: 100px
+  &__item
+    padding: 0 15px
+    &:last-child
+      padding-right: 0
+
+.page
+  width: 100%
+  height: 100%
+  padding: 80px 0 220px
+  &_first
+    background-color: $first-color
+  &_second
+    background-color: $second-color
+  &_third
+    background-color: $third-color
+  &_forth
+    background-color: $forth-color
+  &_fifth
+    background-color: $fifth-color
+  &_sixth
+    background-color: $sixth-color
+  &__title
+  &__slider
+    width: 100%
+    height: 100%
+  &__btns
+  &__btn
+    display: block
+    text-align: center
+    white-space: nowrap
+    cursor: pointer
+    max-width: 593px
+    width: 593px
+    padding: 26px 0
+    margin-top: 30px
+    background-color: $btn-color
+    transition: 0.2s ease
+    &:hover
+      color: $text-color
+      background-color: #333333
+  &_left
+    width: 50%
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    img
+      width: 710px
+      height: 580px
+    p
+      text-align: left
+      color: $text-color
+      padding-right: 1rem
+      padding-top: 2rem
+      span
+        padding: 0 1rem
+        margin-right: 1rem
+        background-color: white
+  &_right
+    width: 50%
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    img
+      width: 710px
+      height: 580px
+    p
+      text-align: right
+      color: $text-color
+      padding-left: 1rem
+  &__card
+    &_light
+      background-color: #C4C4C4
+    &_dark
+      background-color: #575757
+      h3
+        color: white
+      p
+        color: white
+    &_light, &_dark
+      p
+        padding: 0px 35px 20px
+        text-align: center
+      img
+        width: 473px
+        height: 400px
+
+//для слайдера
+.slider
+  &_wrapper
+    max-width: 1420px
+    width: 100%
+    height: 473px
+    position: relative
+    // box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+  &__slide
+    display: none
+    width: 100%
+    height: 100%
+    &.active
+      display: block
+  &__btn-prev, &__btn-next
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 50px
+    background-color: $first-color
+    opacity: 0.4
+    cursor: pointer
+    transition: opacity .2s ease-in-out
+    &:hover
+      opacity: 0.6
+  &__btn-next
+    left: auto
+    right: 0
+  &__dots_wrapper
+    display: flex
+    justify-content: center
+    margin-top: -40px
+    span
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      background-color: #C4C4C4
+      margin-right: 12.5px
+      cursor: pointer
+      &:last-child
+        margin-right: 0
+  &__dot.active
+    background-color: $first-color
+
+.form
+  margin: 0 3rem
+  &__input
+    display: block
+    width: 100%
+    padding: 0.6rem 1rem
+    margin-bottom: 2rem
+    background-color: white
+    color: $first-color
+    line-height: 2.5em
+    border-width: 0
+    font-size: $font-size
+  &__btn
+    display: block
+    text-align: center
+    text-decoration: none
+    max-width: 20rem
+    margin-top: 1rem
+    padding: 1rem 4rem
+    border-width: 1rem
+    border: 2px solid white
+    color: white
+    background-color: $first-color
+    font-size: $font-size
+    transition: 0.2s ease
+    &:hover
+      background-color: white
+      color: black
+  &__checkbox
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    margin-top: 3rem
+    margin-bottom: 3rem
+    line-height: 2em
+  input[type=checkbox]
+    cursor: pointer
+    width: 30px
+    height: 30px
+    margin: 0 20px
+  label
+    font-size: $font-size
+    color: white
+    cursor: pointer
+    margin-bottom: 10px
+    a
+      font-size: 1em
+      text-decoration: underline
+
+.up
+  position: fixed
+  display: block
+  width: 48px
+  height: 48px
+  bottom: 10%
+  right: 10%
+  &-arrow
+    background-image: url(../img/icon/arrow.svg)
+    background-position: center center
+    background-repeat: no-repeat
+    cursor: pointer
+    border-radius: 100%
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px 35px
+    background-color: white
+    &:hover
+      background-color: #F2F2F2
+
+.footer
+  background-color: $header-and-footer-color
+  &__content
+    align-items: flex-start
+  &_left
+    text-align: left
+  &_right
+    text-align: right
+  &__title
+    margin: 30px 0
+    font-size: 1.5em
+  &__icons
+    margin-bottom: 140px
+  &__icon
+    width: 80px
+    height: 80px
+    padding: 0 20px
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+  &__logo
+    margin: 30px 0
+  &__sub-info
+    background-color: $sub-bottom-color
+    a
+      cursor: pointer
+      &:hover
+        color: black
+
+
+
+
+
