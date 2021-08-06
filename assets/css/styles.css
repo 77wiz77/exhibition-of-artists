@@ -183,6 +183,11 @@ main {
   height: 100px;
 }
 
+.menu__logo_start img:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .menu__item {
   padding: 0 15px;
 }
@@ -387,7 +392,7 @@ main {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #C4C4C4;
+  background-color: #ffffff;
   margin-right: 12.5px;
   cursor: pointer;
 }
@@ -541,8 +546,18 @@ main {
   padding-right: 0;
 }
 
+.footer__icon img:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .footer__logo {
   margin: 30px 0;
+}
+
+.footer__logo img:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer__sub-info {

@@ -22,9 +22,6 @@ $card-text-color: black
 $font-size: 1.5em
 $font-title-size: 2.25em
 
-// @function rem($pixels, $context: $font-size)
-//   @return round(#{$pixels / $context}rem)
-
 html, body
   font-family: 'Montserrat', sans-serif
   font-size: 16px
@@ -128,6 +125,9 @@ main
     &_start
       width: 160px
       height: 100px
+      img
+        &:hover
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
   &__item
     padding: 0 15px
     &:last-child
@@ -216,14 +216,12 @@ main
         width: 473px
         height: 400px
 
-//для слайдера
 .slider
   &_wrapper
     max-width: 1420px
     width: 100%
     height: 473px
     position: relative
-    // box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
   &__slide
     display: none
     width: 100%
@@ -253,7 +251,7 @@ main
       width: 20px
       height: 20px
       border-radius: 50%
-      background-color: #C4C4C4
+      background-color: #ffffff
       margin-right: 12.5px
       cursor: pointer
       &:last-child
@@ -351,8 +349,14 @@ main
       padding-left: 0
     &:last-child
       padding-right: 0
+    img
+      &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
   &__logo
     margin: 30px 0
+    img
+      &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
   &__sub-info
     background-color: $sub-bottom-color
     a
