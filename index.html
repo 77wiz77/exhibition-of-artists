@@ -1,173 +1,299 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exhibition-of-artists</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/media.css">
-</head>
-<body>
-  <header>
-    <div id="menu-burger" class="menu-burger">
-      <span></span>
-    </div>
-    <nav class="menu menu_fixed">
-      <div class="menu__content container row_for-header">
-        <a href="#first-page" class="menu__logo_start"><img src="assets/img/logo.svg" alt="Logo"></a>
-        <div id="menu__list" class="menu__list row_for-header">
-          <a href="#second-page" class="menu__item">О нас</a>
-          <a href="#third-page" class="menu__item">Тематики выставки</a>
-          <a href="#forth-page" class="menu__item">План мероприятия</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exhibition-of-artists</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="description" content="Сайт-лендинг для выставки картин" />
+    <meta name="author" content="Art Sakhalin" />
+    <meta
+      name="keywords"
+      content="Art Sakhalin, выставка картин, картины, галерея"
+    />
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-burger" class="menu-burger">
+        <span></span>
       </div>
-    </nav>
-  </header>
+      <nav class="menu menu_fixed">
+        <div class="menu__content container row_for-header">
+          <a href="#first-page" class="menu__logo_start"
+            ><img src="assets/img/logo.svg" alt="Logo"
+          /></a>
+          <div id="menu__list" class="menu__list row_for-header">
+            <a href="#second-page" class="menu__item">О нас</a>
+            <a href="#third-page" class="menu__item">Тематики выставки</a>
+            <a href="#forth-page" class="menu__item">План мероприятия</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <main>
+    <main>
+      <section id="first-page" class="page page_first">
+        <div class="page__content container">
+          <div class="page__title">
+            <h2>
+              Приглашаем вас на нашу выставку молодых художников (20 июня)
+            </h2>
+          </div>
+          <div class="page__slider">
+            <div class="slider_wrapper">
+              <div class="slider__slide active">
+                <img
+                  src="assets/img/forSlider1.png"
+                  alt="forSlider1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slider__slide">
+                <img
+                  src="assets/img/forSlider2.png"
+                  alt="forSlider2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slider__slide">
+                <img
+                  src="assets/img/forSlider3.png"
+                  alt="forSlider3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="slider__btn-prev"></div>
+              <div class="slider__btn-next"></div>
+              <div class="slider__dots_wrapper">
+                <span class="slider__dot active"></span>
+                <span class="slider__dot"></span>
+                <span class="slider__dot"></span>
+              </div>
+            </div>
+          </div>
+          <div class="page__btns row">
+            <a class="page__btn" href="#sixth-page">Записаться на выставку</a>
+            <a class="page__btn" href="#second-page">Подробнее</a>
+          </div>
+        </div>
+      </section>
 
-    <section id="first-page" class="page page_first">
-      <div class="page__content container">
-        <div class="page__title"><h2>Приглашаем вас на нашу выставку молодых художников (20 июня)</h2></div>
-        <div class="page__slider">
-          <div class="slider_wrapper">
-            <div class="slider__slide active"><img src="assets/img/forSlider1.png" alt="forSlider1"></div>
-            <div class="slider__slide"><img src="assets/img/forSlider2.png" alt="forSlider2"></div>
-            <div class="slider__slide"><img src="assets/img/forSlider3.png" alt="forSlider3"></div>
-            <div class="slider__btn-prev"></div>
-            <div class="slider__btn-next"></div>
-            <div class="slider__dots_wrapper">
-              <span class="slider__dot active"></span>
-              <span class="slider__dot"></span>
-              <span class="slider__dot"></span>
+      <section id="second-page" class="page page_second">
+        <div class="page__content container">
+          <div class="page__title"><h2>О нас</h2></div>
+          <div class="page__info row">
+            <div class="page_left">
+              <img src="assets/img/about.png" alt="About" loading="lazy" />
+            </div>
+            <div class="page_right">
+              <p>
+                Художники, дизайнеры, архитекторы, урбанисты и даже мастера по
+                изготовлению мебели. Вместе мы делаем проекты по стрит-арту,
+                благоустройству города, создаём художественные выставки,
+                архитектурные решения, мебель в стиле лофт.
+              </p>
             </div>
           </div>
         </div>
-        <div class="page__btns row">
-          <a class="page__btn" href="#sixth-page">Записаться на выставку</a>
-          <a class="page__btn" href="#second-page">Подробнее</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="second-page" class="page page_second">
-      <div class="page__content container">
-        <div class="page__title"><h2>О нас</h2></div>
-        <div class="page__info row">
-          <div class="page_left"><img src="assets/img/about.png" alt="About"></div>
-          <div class="page_right"><p>Художники, дизайнеры, архитекторы, урбанисты и даже мастера по изготовлению мебели. Вместе мы делаем проекты по стрит-арту, благоустройству города, создаём художественные выставки, архитектурные решения, мебель в стиле лофт.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="third-page" class="page page_third">
-      <div class="page__content container">
-        <div class="page__title"><h2>Тематики выставки</h2></div>
-        <div class="page__cards row">
-          <div class="page__card_light column">
-            <img src="assets/img/landscape.png" alt="Landscape">
-            <h3>Пейзаж</h3>
-            <p>изображенная человеком природа</p>
-          </div>
-          <div class="page__card_dark column">
-            <img src="assets/img/stillLife.png" alt="StillLife">
-            <h3>Натюрморт</h3>
-            <p>изображение неодушевлённых предметов</p>
-          </div>
-          <div class="page__card_light column">
-            <img src="assets/img/portrait.png" alt="Portrait">
-            <h3>Портрет</h3>
-            <p>изображение человека, либо группы людей</p>
+      <section id="third-page" class="page page_third">
+        <div class="page__content container">
+          <div class="page__title"><h2>Тематики выставки</h2></div>
+          <div class="page__cards row">
+            <div class="page__card_light column">
+              <img
+                src="assets/img/landscape.png"
+                alt="Landscape"
+                loading="lazy"
+              />
+              <h3>Пейзаж</h3>
+              <p>изображенная человеком природа</p>
+            </div>
+            <div class="page__card_dark column">
+              <img
+                src="assets/img/stillLife.png"
+                alt="StillLife"
+                loading="lazy"
+              />
+              <h3>Натюрморт</h3>
+              <p>изображение неодушевлённых предметов</p>
+            </div>
+            <div class="page__card_light column">
+              <img
+                src="assets/img/portrait.png"
+                alt="Portrait"
+                loading="lazy"
+              />
+              <h3>Портрет</h3>
+              <p>изображение человека, либо группы людей</p>
+            </div>
           </div>
         </div>
-      </div>
-      
-    </section>
+      </section>
 
-    <section id="forth-page" class="page page_forth">
-      <div class="page__content container">
-        <div class="page__title"><h2>План мероприятия на 20 июня</h2></div>
-        <div class="page__info row">
-          <div class="page_left">
-            <ul>
-              <li><p><span></span>14:00 - Начало выставки</p></li>
-              <li><p><span></span>15:00 - Лекция по жанрам выставки</p></li>
-              <li><p><span></span>16:00 - Практика для тех кто хочет попробовать</p></li>
-              <li><p><span></span>17:00 - Разыгрываем призы среди посетителей</p></li>
-            </ul>
+      <section id="forth-page" class="page page_forth">
+        <div class="page__content container">
+          <div class="page__title"><h2>План мероприятия на 20 июня</h2></div>
+          <div class="page__info row">
+            <div class="page_left">
+              <ul>
+                <li>
+                  <p><span></span>14:00 - Начало выставки</p>
+                </li>
+                <li>
+                  <p><span></span>15:00 - Лекция по жанрам выставки</p>
+                </li>
+                <li>
+                  <p>
+                    <span></span>16:00 - Практика для тех кто хочет попробовать
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span></span>17:00 - Разыгрываем призы среди посетителей
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="page_right">
+              <img src="assets/img/plan.png" alt="Plan" loading="lazy" />
+            </div>
           </div>
-          <div class="page_right"><img src="assets/img/plan.png" alt="Plan"></div>
         </div>
-      </div>
-      
-    </section>
+      </section>
 
-    <section class="page page_fifth">
-      <div class="page__content container">
-        <div class="page__title"><h2>Подарки</h2></div>
-        <div class="page__info row">
-          <div class="page_left"><img src="assets/img/gift.png" alt="Gift"></div>
-          <div class="page_right"><p>В конце выставки будут разыгрываться призы среди посетителей выставки. Испытайте свою удачу</p></div>
+      <section class="page page_fifth">
+        <div class="page__content container">
+          <div class="page__title"><h2>Подарки</h2></div>
+          <div class="page__info row">
+            <div class="page_left">
+              <img src="assets/img/gift.png" alt="Gift" loading="lazy" />
+            </div>
+            <div class="page_right">
+              <p>
+                В конце выставки будут разыгрываться призы среди посетителей
+                выставки. Испытайте свою удачу
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="sixth-page" class="page page_sixth">
-      <div class="page__content container">
-        <div class="page__title"><h2>Запись на выставку</h2></div>
-        <div class="page__info row">
-          <div class="page_left">
-            <form action="" class="form column">
-              <input type="text" name="name" placeholder="Ваша имя" class="form__input" required>
-              <input type="number" name="surname" placeholder="Ваша фамилия" class="form__input" required>
-              <input type="email" name="email" placeholder="Введите ваш e-mail" class="form__input" required>
-              <div class="form__checkbox">
-                <input id="checkPolicy" type="checkbox" name="checkbox" value="agree" required>
-                <label for="checkPolicy" class="form__label">Согласие на обработку <a href="#">персональных данных</a></label>                       
+      <section id="sixth-page" class="page page_sixth">
+        <div class="page__content container">
+          <div class="page__title"><h2>Запись на выставку</h2></div>
+          <div class="page__info row">
+            <div class="page_left">
+              <form action="" class="form column">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваша имя"
+                  class="form__input"
+                  required
+                />
+                <input
+                  type="number"
+                  name="surname"
+                  placeholder="Ваша фамилия"
+                  class="form__input"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Введите ваш e-mail"
+                  class="form__input"
+                  required
+                />
+                <div class="form__checkbox">
+                  <input
+                    id="checkPolicy"
+                    type="checkbox"
+                    name="checkbox"
+                    value="agree"
+                    required
+                  />
+                  <label for="checkPolicy" class="form__label"
+                    >Согласие на обработку
+                    <a href="#">персональных данных</a></label
+                  >
+                </div>
+                <button type="submit" value="Отправить" class="form__btn">
+                  Записаться
+                </button>
+              </form>
+            </div>
+            <div class="page_right">
+              <img
+                class="page_right-img"
+                src="assets/img/forForm.png"
+                alt="Form"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="up">
+        <a href="#first-page"><span class="up-arrow"></span></a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__content row_for-footer container">
+          <div class="footer_left">
+            <div class="footer__title">Наши соц сети</div>
+            <div class="footer__icons row_for-footer">
+              <div class="footer__icon">
+                <a href="#"><img src="assets/img/icon/yt.svg" alt="YT" /></a>
               </div>
-              <button type="submit" value="Отправить" class="form__btn">Записаться</button>
-            </form>
+              <div class="footer__icon">
+                <a href="#"><img src="assets/img/icon/vk.svg" alt="VK" /></a>
+              </div>
+              <div class="footer__icon">
+                <a href="#"><img src="assets/img/icon/ins.svg" alt="ins" /></a>
+              </div>
+            </div>
           </div>
-          <div class="page_right"><img class="page_right-img" src="assets/img/forForm.png" alt="Form"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="up">
-      <a href="#first-page"><span class="up-arrow"></span></a>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer">
-      <div class="footer__content row_for-footer container">
-        <div class="footer_left">
-          <div class="footer__title">Наши соц сети</div>
-          <div class="footer__icons row_for-footer">
-            <div class="footer__icon"><a href="#"><img src="assets/img/icon/yt.svg" alt="YT"></a></div>
-            <div class="footer__icon"><a href="#"><img src="assets/img/icon/vk.svg" alt="VK"></a></div>
-            <div class="footer__icon"><a href="#"><img src="assets/img/icon/ins.svg" alt="ins"></a></div>
+          <div class="footer_right">
+            <div class="footer__logo">
+              <a href="#first-page"
+                ><img src="assets/img/logoFooter.svg" alt="footer Logo"
+              /></a>
+            </div>
+            <p>
+              Записывайтесь на нашу выставку, <br />
+              будет весело
+            </p>
           </div>
         </div>
-        <div class="footer_right">
-          <div class="footer__logo"><a href="#first-page"><img src="assets/img/logoFooter.svg" alt="footer Logo"></a></div>
-          <p>Записывайтесь на нашу выставку, <br> будет весело</p>
-        </div>
+      </div>
+      <div class="footer__sub-info">
+        <div class="footer__content row_for-footer container">
+          <div class="footer_left">
+            <a href="#">Политика конфидициальности</a>
+          </div>
+          <div class="footer_right"><a href="#">Сообщество</a></div>
         </div>
       </div>
-    <div class="footer__sub-info">
-      <div class="footer__content row_for-footer container">
-        <div class="footer_left"><a href="#">Политика конфидициальности</a></div>
-        <div class="footer_right"><a href="#">Сообщество</a></div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="assets/js/slider.js"></script>
-  <script src="assets/js/menu.js"></script>
-  <script src="assets/js/archor.js"></script>
-</body>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/archor.js"></script>
+  </body>
 </html>
